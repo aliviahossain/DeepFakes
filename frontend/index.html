@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Sentinel | AI Authenticity Check</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="animatedBackground"></canvas>
+
+    <div class="container">
+        <header>
+            <h1><span class="highlight">Deepfake</span> Sentinel</h1>
+            <p class="tagline">Empowering Truth in a Digital Age</p>
+        </header>
+        
+        <section class="info-section">
+            <p>Upload an image to leverage advanced AI in detecting manipulated or synthetically generated content. Our system helps verify authenticity with cutting-edge analysis.</p>
+        </section>
+
+        <div class="uploader">
+            <input type="file" id="imageUpload" accept="image/*" hidden>
+            <button type="button" id="uploadButton" class="btn primary-btn">Choose Image for Analysis</button>
+        </div>
+        
+        <div class="preview-area">
+            <img id="imagePreview" src="" alt="Image Preview" style="display:none;">
+        </div>
+        
+        <button id="predictButton" class="btn predict-btn" style="display:none;">Initiate Deepfake Scan</button>
+        
+        <div id="result" class="result-container">
+            </div>
+
+        <footer>
+            <p>&copy; 2023 Deepfake Sentinel. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
